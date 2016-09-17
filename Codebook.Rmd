@@ -1,0 +1,28 @@
+Codebook
+========
+
+Variables
+------------------------------
+
+Variable name    | Description
+-----------------|------------
+Subject          | ID
+activity         | Activity name
+featureDomain       | Time domain signal or frequency domain signa
+featureInstrument   | Measuring instrument
+featureAcceleration | Acceleration signal
+featureVariable     | Variable
+featureJerk         | Jerk signal
+featureMagnitude    | Magnitude of the signals calculated using the Euclidean norm
+featureAxis         | 3-axial signals in the X, Y and Z directions
+featureCount        | Count of data points used to compute `average`
+featureAverage      | Average of each variable for each activity and each subject
+
+Summary of variables
+--------------------
+
+```{r}
+TidydtSet <- read.table("TidydtSet", header = TRUE)
+summary(TidydtSet)
+```
+
